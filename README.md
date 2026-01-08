@@ -1,2 +1,1 @@
-TO-DO web application using Flask, allowing users to add, delete, and mark
-tasks as completed.
+I built an advanced Flask-based task manager with CRUD operations, reminders, analytics using charts, task categorization, achievements, and SQLite persistence. The application uses Python backend logic, JavaScript for real-time reminders, and Bootstrap for responsive UI.
