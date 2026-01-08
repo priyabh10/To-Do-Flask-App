@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Stats</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="container mt-5">
+
+<h3 class="text-center">📊 Task Analytics</h3>
+
+<canvas id="taskChart"></canvas>
+
+<script>
+const ctx = document.getElementById('taskChart');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Total', 'Completed', 'Pending', 'Important'],
+        datasets: [{
+            label: 'Tasks',
+            data: [{{ total }}, {{ completed }}, {{ pending }}, {{ important }}],
+        }]
+    }
+});
+</script>
+
+</body>
+</html>
